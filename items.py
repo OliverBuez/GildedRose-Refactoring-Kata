@@ -13,4 +13,4 @@ def Item(name, sell_in, quality):
         return BackstagePasses(name, sell_in, quality)
     if name.startswith("Sulfuras"):
         return Sulfuras(name, sell_in, quality)
-    return AbstractItem(name, sell_in, quality)
+    return BasicItem(name, sell_in, quality)
