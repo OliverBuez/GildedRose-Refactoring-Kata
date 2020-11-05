@@ -24,11 +24,11 @@ class AbstractItem:
             self.quality = 0
         return self
 
-    def _decrease_quality(self, factor):
+    def _decrease_quality(self, by):
         self._set_quality(self.quality - factor * (2 if self.sell_in <=0 else 1))
         return self
     
-    def _increase_quality(self, factor):
+    def _increase_quality(self, by):
         self._set_quality(self.quality + factor)
         return self
 
